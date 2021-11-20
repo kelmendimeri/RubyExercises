@@ -31,12 +31,11 @@ describe One do
       output.should eql?(result_read)
     end
 
-    context "Testing the method passport_check " do
-      it 'test for reading' do
-        output = class_one.passports_check
-        checking_output = class_one.reading_passport.include?(result_check)
-        checking_output.should eql?(result_check)
-      end
-    end
+    # context "Testing the method passport_check " do
+    #   it 'test for pass' do
+    #     output = class_one.passports_check
+    #     should class_one.reading_passport.include?(result_check)
+    #   end
+    # end
   end
 end
