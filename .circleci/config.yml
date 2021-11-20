@@ -20,6 +20,7 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
+      - run: bundle init
       - run: gem install rspec
       - run: bundle install
       
