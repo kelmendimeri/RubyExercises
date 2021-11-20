@@ -10,6 +10,7 @@ jobs:
           POSTGRES_HOST_AUTH_METHOD: trust
     steps:
       - checkout
+      - run: gem rspec install 
       - run: gem install bundler:2.2.20
       #install sqlite dependency
       - run: sudo apt update && sudo apt install zlib1g-dev libsqlite3-dev
